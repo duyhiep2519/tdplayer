@@ -9,13 +9,22 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow access to your media library to play your videos",
+        "NSBrightnessUsageDescription": "Allow access to control screen brightness during video playback"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "READ_MEDIA_VIDEO",
+        "SYSTEM_BRIGHTNESS"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -32,7 +41,9 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-media-library",
+      "expo-brightness"
     ],
     "experiments": {
       "typedRoutes": true

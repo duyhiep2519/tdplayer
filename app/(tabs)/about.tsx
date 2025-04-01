@@ -25,7 +25,7 @@ export default function AboutScreen() {
       <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.logoContainer}>
           <Image
-            source={require("../assets/images/icon.png")}
+            source={require("../../assets/images/icon.png")}
             style={styles.logo}
             resizeMode="contain"
           />
@@ -73,7 +73,7 @@ export default function AboutScreen() {
         </View>
 
         <Text style={styles.copyright}>
-          © {new Date().getFullYear()} TD Player. All rights reserved.
+          © 2025 TD Player. All rights reserved.
         </Text>
       </ScrollView>
     </>
